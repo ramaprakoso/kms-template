@@ -7,27 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Gomac Knowledgebase</title>
     <!-- LOADING STYLESHEETS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script> 
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script> 
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script>
+     <!-- include libraries(jQuery, bootstrap) -->
+<!-- <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet"> -->
+
+<!-- include summernote css/js -->
+<link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="container-fluid featured-area-white-border">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="login-box border-right-1">
-                        <a href="#">
-                            <i class="fa fa-key"></i> Login</a>
-                    </div>
-                    <div class="login-box border-left-1 border-right-1">
-                        <a href="#">
-                            <i class="fa fa-pencil"></i> Sign Up</a>
+         <div class="container">
+                <div class="row">
+
+                  <div class="col-md-4 col-icon">
+                      <div>
+                        <img class="logo-custom" src="images/nduwur-5.gif" alt="logo">
                     </div>
                 </div>
+                <div class="col-md-4" class="logo-font"><div class="font-head"></div></div>
+                <div class="col-md-4"></div>
+
             </div>
-        </div>
+     </div>
     </div>
     <!-- LOGO -->
     <div class="container">
@@ -41,7 +51,7 @@
     </div>
     <!-- END LOGO-->
     <!-- TOP NAVIGATION -->
-    <div class="container-fluid">
+ <div class="container-fluid">
         <div class="navigation">
             <div class="row">
                 <ul class="topnav">
@@ -52,15 +62,19 @@
                     </li>
                     <li>
                         <a href="knowledge-base.html">
-                            <i class="fa fa-book"></i> Knowledge Base</a>
+                            <i class="fa fa-book"></i> Document</a>
                     </li>
                     <li>
-                        <a href="articles.html">
-                            <i class="fa fa-file-text-o"></i> Articles</a>
+                        <a href="wiki.html">
+                            <i class="fa fa-file-text-o"></i> Wiki</a>
                     </li>
                     <li>
                         <a href="faq.html">
-                            <i class="fa fa-lightbulb-o"></i> FAQ</a>
+                            <i class="fa fa-lightbulb-o"></i> Forum</a>
+                    </li>
+                     <li>
+                        <a href="faq.html">
+                            <i class="fa fa-location-arrow"></i> Expert Locator</a>
                     </li>
                     <li class="icon">
                         <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
@@ -71,7 +85,7 @@
     </div>
     <!-- END TOP NAVIGATION -->
     <!-- SEARCH FIELD AREA -->
-    <div class="searchfield bg-hed-six">
+  <!--   <div class="searchfield bg-hed-six">
         <div class="container" style="padding-top: 20px; padding-bottom: 20px;">
             <div class="row text-center margin-bottom-20">
                 <h1 class="white"> Knowledge Base</h1>
@@ -83,7 +97,7 @@
                 <button class="buttonsearch btn btn-info btn-lg">Search</button>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- END SEARCH FIELD AREA -->
     <!-- MAIN SECTION -->
     <div class="container featured-area-default padding-30">
@@ -102,9 +116,9 @@
                                 <a href="knowledge-base.html">Knowledge Base</a>
                             </li>
                             <li>
-                                <a href="single-category.html">General</a>
+                                <a href="wiki5.html">General</a>
                             </li>
-                            <li class="active">How to change account password?</li>
+                            <li class="active">Algorithm</li>
                         </ol>
                     </div>
                     <!-- END BREADCRUMBS -->
@@ -112,12 +126,12 @@
                     <div class="panel panel-default">
                         <div class="article-heading margin-bottom-5">
                             <a href="#">
-                                <i class="fa fa-pencil-square-o"></i> How to change account password?</a>
+                                <i class="fa fa-pencil-square-o"></i> Algorithm</a>
                         </div>
                         <div class="article-info">
                             <div class="art-date">
                                 <a href="#">
-                                    <i class="fa fa-calendar-o"></i> 20 May, 2016 </a>
+                                    <i class="fa fa-calendar-o"></i> 20 May, 2018 </a>
                             </div>
                             <div class="art-category">
                                 <a href="#">
@@ -341,117 +355,6 @@
                     <!-- END COMMENTS -->
                 </div>
 
-            </div>
-
-            <!-- SIDEBAR STUFF -->
-            <div class="col-md-4 padding-20">
-                <div class="row margin-bottom-30">
-                    <div class="col-md-12 ">
-                        <div class="support-container">
-                            <h2 class="support-heading">Need more Support?</h2>
-                            If you cannot find an answer in the knowledgebase, you can
-                            <a href="#">contact us</a> for further help.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row margin-top-20">
-                    <div class="col-md-12">
-                        <div class="fb-heading-small">
-                            Popular Articles
-                        </div>
-                        <hr class="style-three">
-                        <div class="fat-content-small padding-left-10">
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-file-text-o"></i> How to change account password?</a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-file-text-o"></i> How to edit order details?</a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-file-text-o"></i> Add new user</a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-file-text-o"></i> Change customer details</a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-file-text-o"></i> Lookup existing customer in order form</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row margin-top-20">
-                    <div class="col-md-12">
-                        <div class="fb-heading-small">
-                            Latest Articles
-                        </div>
-                        <hr class="style-three">
-                        <div class="fat-content-small padding-left-10">
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-file-text-o"></i> How to change username?</a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-file-text-o"></i> How to change currency in gomac?</a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-file-text-o"></i> How to edit order details?</a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-file-text-o"></i> How to print stock barcode?</a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-file-text-o"></i> How to generate barcode?</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- POPULAR TAGS (SHOW MAX 20 TAGS) -->
-                <div class="row margin-top-20">
-                    <div class="col-md-12">
-                        <div class="fb-heading-small">
-                            Popular Tags
-                        </div>
-                        <hr class="style-three">
-                        <div class="fat-content-tags padding-left-10">
-                            <a href="#" class="btn btn-default btn-o btn-sm">password</a>
-                            <a href="#" class="btn btn-default btn-o btn-sm">settings</a>
-                            <a href="#" class="btn btn-default btn-o btn-sm">sign up</a>
-                            <a href="#" class="btn btn-default btn-o btn-sm">currency</a>
-                            <a href="#" class="btn btn-default btn-o btn-sm">payment</a>
-                            <a href="#" class="btn btn-default btn-o btn-sm">user</a>
-                            <a href="#" class="btn btn-default btn-o btn-sm">database</a>
-                            <a href="#" class="btn btn-default btn-o btn-sm">storage</a>
-                            <a href="#" class="btn btn-default btn-o btn-sm">export</a>
-                            <a href="#" class="btn btn-default btn-o btn-sm">email</a>
-                            <a href="#" class="btn btn-default btn-o btn-sm">import</a>
-                            <a href="#" class="btn btn-default btn-o btn-sm">campaign</a>
-                            <a href="#" class="btn btn-default btn-o btn-sm">edit</a>
-                            <a href="#" class="btn btn-default btn-o btn-sm">orders</a>
-                            <a href="#" class="btn btn-default btn-o btn-sm">help</a>
-                            <a href="#" class="btn btn-default btn-o btn-sm">billing</a>
-                            <a href="#" class="btn btn-default btn-o btn-sm">user</a>
-                            <a href="#" class="btn btn-default btn-o btn-sm">configure</a>
-                            <a href="#" class="btn btn-default btn-o btn-sm">customer</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- END POPULAR TAGS (SHOW MAX 20 TAGS) -->
             </div>
             <!-- END SIDEBAR STUFF -->
         </div>

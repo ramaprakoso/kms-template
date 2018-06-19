@@ -184,7 +184,7 @@ input.search {
 }
 .footer-body {
 	font-size: 14px;
-	color: #c8e1ff;
+	color: #ffffff;
 }
 .footer-body ul {
 	margin-left: 0;
@@ -194,14 +194,14 @@ input.search {
 	list-style-image: url('../images/listarrow.png');
 	list-style-position: inside;
 	padding: 4px 5px 8px 20px;
-	border-bottom: 1px solid #134989;
+	border-bottom: 1px solid #ffffff;
 	text-indent: -0.8em;
 }
 .footer-body ul li:last-child {
 	border-bottom: none;
 }
 .footer-body ul li a {
-	color: #c8e1ff;
+	color: #ffffff;
 }
 .footer-body ul li a:hover {
 	color: #ffffff;

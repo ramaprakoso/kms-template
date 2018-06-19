@@ -5985,9 +5985,12 @@ button.close {
   }
 }
 @media (min-width: 992px) {
-  .modal-lg {
+  /*.modal-lg {
     width: 900px;
-  }
+  }*/
+  .modal-lg {
+    max-width: 80% !important;
+}
 }
 .tooltip {
   position: absolute;
