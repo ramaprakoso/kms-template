@@ -99,155 +99,71 @@
     <!-- MAIN SECTION -->
     <div class="container featured-area-default padding-30">
         <div class="row">
-            <div class="col-md-8 padding-20">
+
+            <div class="col-md-12 padding-20">
                 <div class="row">
                     <!-- BREADCRUMBS -->
-                    <div class="breadcrumb-container">
-                        <ol class="breadcrumb">
-                            <li>
-                                <a href="index.html">
-                                    <i class="fa fa-home"></i>
-                                </a>
-                            </li>
-                            <li class="active">Knowledge Base</li>
-                        </ol>
-                    </div>
                     <!-- END BREADCRUMBS -->
                     <!-- ARTICLES CATEGORIES SECTION -->
                     <div class="fb-heading">
-                        Knowledge Base
+                        Expert Locator
                     </div>
                     <hr class="style-three">
                     <div class="row">
-                        <div class="col-md-6 margin-bottom-20">
-                            <div class="fat-heading-abb">
-                                <a href="single-category.html">
-                                    <i class="fa fa-folder"></i> General
-                                    <span class="cat-count">(10)</span>
-                                </a>
-                            </div>
-                            <div class="fat-content-small padding-left-30">
-                                <ul>
-                                    <li>
-                                        <a href="single-article.html">
-                                            <i class="fa fa-file-text-o"></i> How to change account password?</a>
-                                    </li>
-                                    <li>
-                                        <a href="single-article.html">
-                                            <i class="fa fa-file-text-o"></i> How to edit order details?</a>
-                                    </li>
-                                    <li>
-                                        <a href="single-article.html">
-                                            <i class="fa fa-file-text-o"></i> Add new user</a>
-                                    </li>
-                                    <li>
-                                        <a href="single-article.html">
-                                            <i class="fa fa-file-text-o"></i> Change customer details</a>
-                                    </li>
-                                    <li>
-                                        <a href="single-article.html">
-                                            <i class="fa fa-file-text-o"></i> Lookup existing customer in order form</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-6 margin-bottom-20">
-                            <div class="fat-heading-abb">
-                                <a href="single-category.html">
-                                    <i class="fa fa-folder"></i> Account Settings
-                                    <span class="cat-count">(6)</span>
-                                </a>
-                            </div>
-                            <div class="fat-content-small padding-left-30">
-                                <ul>
-                                    <li>
-                                        <a href="single-article.html">
-                                            <i class="fa fa-file-text-o"></i> How to change account password?</a>
-                                    </li>
-                                    <li>
-                                        <a href="single-article.html">
-                                            <i class="fa fa-file-text-o"></i> How to edit order details?</a>
-                                    </li>
-                                    <li>
-                                        <a href="single-article.html">
-                                            <i class="fa fa-file-text-o"></i> Add new user</a>
-                                    </li>
-                                    <li>
-                                        <a href="single-article.html">
-                                            <i class="fa fa-file-text-o"></i> Change customer details</a>
-                                    </li>
-                                    <li>
-                                        <a href="single-article.html">
-                                            <i class="fa fa-file-text-o"></i> Lookup existing customer in order form</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-6 margin-bottom-20">
-                            <div class="fat-heading-abb">
-                                <a href="single-category.html">
-                                    <i class="fa fa-folder"></i> Security &amp; Billing
-                                    <span class="cat-count">(5)</span>
-                                </a>
-                            </div>
-                            <div class="fat-content-small padding-left-30">
-                                <ul>
-                                    <li>
-                                        <a href="single-article.html">
-                                            <i class="fa fa-file-text-o"></i> How to change account password?</a>
-                                    </li>
-                                    <li>
-                                        <a href="single-article.html">
-                                            <i class="fa fa-file-text-o"></i> How to edit order details?</a>
-                                    </li>
-                                    <li>
-                                        <a href="single-article.html">
-                                            <i class="fa fa-file-text-o"></i> Add new user</a>
-                                    </li>
-                                    <li>
-                                        <a href="single-article.html">
-                                            <i class="fa fa-file-text-o"></i> Change customer details</a>
-                                    </li>
-                                    <li>
-                                        <a href="single-article.html">
-                                            <i class="fa fa-file-text-o"></i> Lookup existing customer in order form</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                         <div class="searchfield" style="background: #ffffff;min-width: 140px;">
+                                  <div class="row search-row">
+                           <input type="text" class="search" style="width: 100%;" placeholder="Search Expert...">
+                                
+                           </div>
+                       </div>
+
+                      <ul class="nav nav-tabs navbar-right" id="myTab" role="tablist">
+                          <li class="nav-item">
+                                <span style="position: relative;display: block;padding: 10px 15px;">Sorting : </span>
+                              </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Name</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Competency</a>
+                          </li>
+                        </ul>
+                        <table class="table table-striped">
+                            <thead>
+                              <tr>
+                                <th>Name</th>
+                                <th>Departement</th>
+                                <th>Position</th>
+                                <th>Competency</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><a href="expert_edit.html"><span style="font-weight: bold;">John</span></a></td>
+                                <td>Information Techonolgy</td>
+                                <td>Programmer</td>
+                                <td>Programming</td>
+                              </tr>
+                              <tr>
+                                <td><a href="expert_edit.html"><span style="font-weight: bold;">Emha Ainun Najib</span></a></td>
+                                <td>Human Resource</td>
+                                <td>Manager HRD</td>
+                                <td>Recruitment Specialist</td>
+                              </tr>
+                              <tr>
+                                <td><a href="expert_edit.html"<span style="font-weight: bold;">Sandy</a></a></td>
+                                <td>Marketing</td>
+                                <td>Manager Marketing</td>
+                                <td>Leads Marketing</td>
+                              </tr>
+                            </tbody>
+                          </table>
                     </div>
                     <!-- END ARTICLES CATEOGIRES SECTION -->
                 </div>
             </div>
 
             <!-- SIDEBAR STUFF -->
-            <div class="col-md-4 padding-20">
-                <div class="row margin-bottom-30">
-                    <div class="col-md-12 ">
-                        <div class="support-container">
-                            <h2 class="support-heading">Need more Support?</h2>
-                            If you cannot find an answer in the knowledgebase, you can
-                            <a href="#">contact us</a> for further help.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row margin-top-20">
-                    <div class="col-md-12">
-                        <div class="fb-heading-small">
-                            Manage Document
-                        </div>
-                        <hr class="style-three">
-                        <div class="fat-content-small padding-left-10">
-                              <button class="btn btn-primary btn-block"><i class="fa fa-folder" data-toggle="modal" data-target="#myModal">Manage Document</i></button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- POPULAR TAGS (SHOW MAX 20 TAGS) -->
-                <!-- END POPULAR TAGS (SHOW MAX 20 TAGS) -->
-            </div>
-            <!-- END SIDEBAR STUFF -->
         </div>
     </div>
     <!-- END MAIN SECTION -->
