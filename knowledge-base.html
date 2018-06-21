@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gomac Knowledgebase</title>
+    <title>Knowledgebase</title>
     <!-- LOADING STYLESHEETS -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -94,13 +94,13 @@
       <div class="searchfield bg-hed-three">
         <div class="container" style="padding-top: 20px; padding-bottom: 20px;">
             <div class="row text-center margin-bottom-20">
-                 <h1 class="white"> Knowledge Directory</h1>
+                 <h1 class="white"> Document Management</h1>
             </div>
              <br>
-         <div class="row search-row">
+        <!--  <div class="row search-row">
            <input type="text" class="search" placeholder="What do you need help with?">
                 <a class="buttonsearch btn btn-success btn-lg" href="search-results.html">Search</a>
-           </div>
+           </div> -->
         </div>
     </div>
     <!-- END SEARCH FIELD AREA -->
@@ -114,116 +114,80 @@
                         <ol class="breadcrumb">
                             <li>
                                 <a href="index.html">
-                                    <i class="fa fa-home"></i>
+                                    <i class="fa fa-folder"></i>
                                 </a>
                             </li>
-                            <li class="active">Knowledge Base</li>
+                            <li class="active">Manage Document</li>
                         </ol>
                     </div>
                     <!-- END BREADCRUMBS -->
                     <!-- ARTICLES CATEGORIES SECTION -->
                     <div class="fb-heading">
-                        Knowledge Base
+                        Document Dashboard
                     </div>
                     <hr class="style-three">
-                    <div class="row">
-                        <div class="col-md-6 margin-bottom-20">
-                            <div class="fat-heading-abb">
-                                <a href="single-category.html">
-                                    <i class="fa fa-folder"></i> General
-                                    <span class="cat-count">(10)</span>
-                                </a>
-                            </div>
-                            <div class="fat-content-small padding-left-30">
-                                <ul>
-                                    <li>
-                                        <a href="single-article.html">
-                                            <i class="fa fa-file-text-o"></i> How to change account password?</a>
-                                    </li>
-                                    <li>
-                                        <a href="single-article.html">
-                                            <i class="fa fa-file-text-o"></i> How to edit order details?</a>
-                                    </li>
-                                    <li>
-                                        <a href="single-article.html">
-                                            <i class="fa fa-file-text-o"></i> Add new user</a>
-                                    </li>
-                                    <li>
-                                        <a href="single-article.html">
-                                            <i class="fa fa-file-text-o"></i> Change customer details</a>
-                                    </li>
-                                    <li>
-                                        <a href="single-article.html">
-                                            <i class="fa fa-file-text-o"></i> Lookup existing customer in order form</a>
-                                    </li>
-                                </ul>
-                            </div>
+                        <table class="table table-striped margin-bottom-30">
+                            <thead>
+                              <tr>
+                               
+                                <th>Category</th>
+                                <th>Created Date</th>
+                                <th>Number Articles</th>
+                                <th>Action</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><span style="font-weight: bold;">Agricultural</span></td>
+                                <td>20 January 2018</td>
+                                <td>15</td>
+                                <td><a href="#" class="btn btn-success btn-block" data-toggle="modal" data-target="#editModal">Edit</a></td>
+                              </tr>
+                              <tr>
+                                <td><span style="font-weight: bold;">Botanical</span></td>
+                                <td>19 Februari 2018</td>
+                                <td>20</td>
+                                  <td><a href="#" class="btn btn-success btn-block" data-toggle="modal" data-target="#editModal">Edit</a></td>
+                              </tr>
+                              <tr>
+                                <td><span style="font-weight: bold;">Animal Science</span></td>
+                                <td>22 Juni 2018</td>
+                                <td>31</td>
+                                  <td><a href="#" class="btn btn-success btn-block" data-toggle="modal" data-target="#editModal">Edit</a></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                            <div class="modal" id="editModal">
+                            <div class="modal-dialog modal-lg margin-right">
+                              <div class="modal-content">
+                              
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                  <h4 class="modal-title">Edit Document</h4>
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <form>
+                                    <div class="form-group row">
+                                <label for="inputEmail3" class="col-sm-3 col-form-label">Document Name</label>
+                                <div class="col-sm-6">
+                                  <input type="email" class="form-control" id="inputEmail3" placeholder="Document Name">
+                                </div>
+                              </div>
+                                        
+                                </div>
+                                
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+                                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                                </form>
+                              </div>
+                          </div>
                         </div>
-                        <div class="col-md-6 margin-bottom-20">
-                            <div class="fat-heading-abb">
-                                <a href="single-category.html">
-                                    <i class="fa fa-folder"></i> Account Settings
-                                    <span class="cat-count">(6)</span>
-                                </a>
-                            </div>
-                            <div class="fat-content-small padding-left-30">
-                                <ul>
-                                    <li>
-                                        <a href="single-article.html">
-                                            <i class="fa fa-file-text-o"></i> How to change account password?</a>
-                                    </li>
-                                    <li>
-                                        <a href="single-article.html">
-                                            <i class="fa fa-file-text-o"></i> How to edit order details?</a>
-                                    </li>
-                                    <li>
-                                        <a href="single-article.html">
-                                            <i class="fa fa-file-text-o"></i> Add new user</a>
-                                    </li>
-                                    <li>
-                                        <a href="single-article.html">
-                                            <i class="fa fa-file-text-o"></i> Change customer details</a>
-                                    </li>
-                                    <li>
-                                        <a href="single-article.html">
-                                            <i class="fa fa-file-text-o"></i> Lookup existing customer in order form</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-6 margin-bottom-20">
-                            <div class="fat-heading-abb">
-                                <a href="single-category.html">
-                                    <i class="fa fa-folder"></i> Security &amp; Billing
-                                    <span class="cat-count">(5)</span>
-                                </a>
-                            </div>
-                            <div class="fat-content-small padding-left-30">
-                                <ul>
-                                    <li>
-                                        <a href="single-article.html">
-                                            <i class="fa fa-file-text-o"></i> How to change account password?</a>
-                                    </li>
-                                    <li>
-                                        <a href="single-article.html">
-                                            <i class="fa fa-file-text-o"></i> How to edit order details?</a>
-                                    </li>
-                                    <li>
-                                        <a href="single-article.html">
-                                            <i class="fa fa-file-text-o"></i> Add new user</a>
-                                    </li>
-                                    <li>
-                                        <a href="single-article.html">
-                                            <i class="fa fa-file-text-o"></i> Change customer details</a>
-                                    </li>
-                                    <li>
-                                        <a href="single-article.html">
-                                            <i class="fa fa-file-text-o"></i> Lookup existing customer in order form</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
                     <!-- END ARTICLES CATEOGIRES SECTION -->
                 </div>
             </div>
@@ -232,11 +196,6 @@
             <div class="col-md-4 padding-20">
                 <div class="row margin-bottom-30">
                     <div class="col-md-12 ">
-                        <div class="support-container">
-                            <h2 class="support-heading">Need more Support?</h2>
-                            If you cannot find an answer in the knowledgebase, you can
-                            <a href="#">contact us</a> for further help.
-                        </div>
                     </div>
                 </div>
 
@@ -247,7 +206,49 @@
                         </div>
                         <hr class="style-three">
                         <div class="fat-content-small padding-left-10">
-                              <button class="btn btn-primary btn-block"><i class="fa fa-folder" data-toggle="modal" data-target="#myModal">Manage Document</i></button>
+                              <button class="btn btn-primary btn-block"><i class="fa fa-folder" data-toggle="modal" data-target="#myModal"><span style="margin-left: 10px;">Created Document</i></button>
+                        </div>
+                         <div class="modal" id="myModal">
+                            <div class="modal-dialog modal-lg margin-right">
+                              <div class="modal-content">
+                              
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                  <h4 class="modal-title">Create Document</h4>
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                            <form>
+                              <div class="form-group row">
+                                <label for="inputEmail3" class="col-sm-3 col-form-label">Document Name</label>
+                                <div class="col-sm-6">
+                                  <input type="email" class="form-control" id="inputEmail3" placeholder="Document Name">
+                                </div>
+                              </div>
+                          </form>
+                       <!--    <div class="form-group row">
+                            <label for="inputPassword3" class="col-sm-2 col-form-label">Category</label>
+                            <div class="col-sm-10">
+                             <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <option selected>Choose...</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                            </div>
+                          </div> -->
+                                </div>
+                                
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+                                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                                
+                              </div>
+                          </div>
                         </div>
                     </div>
                 </div>
