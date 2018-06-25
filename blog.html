@@ -170,7 +170,7 @@
                             </p>
                         </div>
                         <div class="article-read-more">
-                            <a href="single-article.html" class="btn btn-default btn-wide">Read more...</a>
+                            <a href="wiki1.html" class="btn btn-default btn-wide">Read more...</a>
                         </div>
                     </div>
 
@@ -204,7 +204,7 @@
                             </p>
                         </div>
                         <div class="article-read-more">
-                            <a href="single-article.html" class="btn btn-default btn-wide">Read more...</a>
+                            <a href="wiki2.html" class="btn btn-default btn-wide">Read more...</a>
                         </div>
                     </div>
 
@@ -238,7 +238,7 @@
                             </p>
                         </div>
                         <div class="article-read-more">
-                            <a href="single-article.html" class="btn btn-default btn-wide">Read more...</a>
+                            <a href="wiki3.html" class="btn btn-default btn-wide">Read more...</a>
                         </div>
                     </div>
 
@@ -272,7 +272,7 @@
                             </p>
                         </div>
                         <div class="article-read-more">
-                            <a href="single-article.html" class="btn btn-default btn-wide">Read more...</a>
+                            <a href="wiki4.html" class="btn btn-default btn-wide">Read more...</a>
                         </div>
                     </div>
 
@@ -306,7 +306,7 @@
                             </p>
                         </div>
                         <div class="article-read-more">
-                            <a href="single-article.html" class="btn btn-default btn-wide">Read more...</a>
+                            <a href="wiki5.html" class="btn btn-default btn-wide">Read more...</a>
                         </div>
                     </div>
                     <!-- END ARTICLES -->
@@ -359,7 +359,46 @@
                         </div>
                     </div>
                 </div> -->
-
+                 <button class="btn btn-primary btn-block"><i class="fa fa-pencil-square-o" data-toggle="modal" data-target="#myModal"><span style="margin-left: 10px">Posting New Blog</span></i></button>
+                      <div class="modal" id="myModal">
+                            <div class="modal-dialog modal-lg margin-right">
+                              <div class="modal-content">
+                              
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                  <h4 class="modal-title"><b>Posting New Blog</b></h4>
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                 <form>
+                                  <div class="form-group">
+                                    <label for="exampleInputEmail1">Title</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Title ...">
+                                  </div>
+                                  <label for="exampleInputEmail1">Content</label>
+                                  <div id="summernote"></div>
+                                    <script>
+                                     $('#summernote').summernote({
+                                        placeholder: 'Posting ...',
+                                        tabsize: 2,
+                                        height: 100
+                                       });
+                                  </script>   
+                                </form>
+                    
+                                </div>
+                                
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+                                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                                
+                              </div>
+                          </div>
+                        </div>
                 <div class="row margin-top-20">
                     <div class="col-md-12">
                         <div class="fb-heading-small">
